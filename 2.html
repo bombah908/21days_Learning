@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的第一个网页</title>
+</head>
+<body>
+
+  <h1>你好，世界</h1>
+  <p>这是我的第一个网页</p>
+  <script>
+ fetch("https://jsonplaceholder.typicode.com/users")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    data.forEach(function(item){
+      console.log(item.name);
+    });
+  });
+  </script>
+</body>
+</html>

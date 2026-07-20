@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的第一个网页</title>
+</head>
+<body>
+
+  <h1>你好，世界</h1>
+  <p>这是我的第一个网页</p>
+  <script>
+    class student {
+      constructor(name,age,score){
+        this.name=name;
+        this.age=age;
+        this.score=score;
+      }
+      showinfo(){
+        console.log(this.name + "年龄" + this.age + "岁，分数" + this.score);
+      }
+      isPass(){
+        return this.score >= 60;
+      }
+    }
+    let students = [
+      new student("小红", 20, 80),
+      new student("小刚", 18, 58),
+      new student("小强", 22, 60)
+    ];
+
+    students.forEach(function(item){
+      item.showinfo();
+      if (item.isPass()){
+        console.log("及格");
+      }else{
+        console.log("不及格");
+      }
+      }
+    )
+  </script>
+</body>
+</html>
