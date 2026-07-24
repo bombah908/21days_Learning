@@ -1,0 +1,17 @@
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git 凭据（含 Token，切勿提交）
+.git-credentials
